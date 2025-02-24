@@ -1,15 +1,6 @@
 FROM rocker/r-ver:4.3.2
 
 # Install system dependencies for R packages
-# RUN apt-get update && apt-get install -y \
-#     wget \
-#     libxml2-dev \
-#     libcurl4-openssl-dev \
-#     libssl-dev \
-#     libnetcdf-dev \
-#     libhdf5-dev \
-#     libxt-dev \
-#     && rm -rf /var/lib/apt/lists/*
 RUN apt-get update && apt-get install -y \
     libnetcdf-dev \
     libglpk40 \
